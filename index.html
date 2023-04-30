@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <section>
+            <h2>Drag and Drop</h2>
+            <div class="parent">
+                <div class="dropzone"  ondragover="dragOver(event)" ondrop="drop(event)">
+                    <h4>To-Do</h4>
+                    <div id="drag-1" class="draggable" draggable="true" ondragstart="dragStart(event)">Arrast 1</div>
+                    <div id="drag-2" class="draggable" draggable="true" ondragstart="dragStart(event)">Arrast 2</div>
+                    <div id="drag-3" class="draggable" draggable="true" ondragstart="dragStart(event)">Arrast 3</div>
+                    <!-- CANVAS -->
+                    <canvas id="canvas" id="drag-4" class="draggable" draggable="true" ondragstart="dragStart(event)"></canvas>^
+                    <!-- CRIANDO SVG -->
+                    <div id="drag-5" class="draggable" draggable="true" ondragstart="dragStart(event)">
+                        <?xml version="1.0" standalone="no"?>
+                        <svg width="200" height="250" version="1.1" xmlns="http://www.w3.org/2000/svg">
+                            <polygon points="50 160 55 180 70 180 60 190 65 205 50 195 35 205 40 190 30 180 45 180"
+                            stroke="green" fill="transparent" stroke-width="5"/>
+                        </svg>
+                    </div>
+                </div>
+                <div class="dropzone" ondragover="dragOver(event)" ondrop="drop(event)">
+                    <h4>Doing</h4>
+                </div>
+                <div class="dropzone" ondragover="dragOver(event)" ondrop="drop(event)">
+                    <h4>Done</h4>
+                </div>
+            </div>
+        </section>
+    </div>
+    
+
+    <script src="script.js"></script>
+</body>
+</html>

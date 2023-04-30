@@ -1,0 +1,48 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+html{
+    font-size:62.5%;
+}
+body{
+    font-size: 1.6rem;
+}
+h2{
+    margin-bottom: 1rem;
+}
+.content{
+    max-width: 1200px;
+    margin:0 auto;
+}
+.parent{
+    color:black;
+    display: flex;
+    font-weight: bold;
+    padding: 2rem;
+}
+.origin{
+    flex-basis: 100%;
+    flex-grow: 1;
+    padding: 1rem;
+}
+.draggable{
+    border:1px solid red;
+    background-color: lightblue;
+    cursor: grab;
+    font-weight: normal;
+    margin: 1rem 0;
+    padding: 1rem;
+}
+.dropzone{
+    border:2px dashed #ddd;
+    background-color: #99f;
+    flex-basis: 100%;
+    flex-grow: 1;
+    margin: 1rem;
+    padding: 1rem;
+}
+.dropzone:hover{
+    border-color: red;
+}
