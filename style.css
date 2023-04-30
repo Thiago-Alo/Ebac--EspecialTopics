@@ -46,3 +46,16 @@ h2{
 .dropzone:hover{
     border-color: red;
 }
+
+@media (prefers-color-scheme: dark) {
+    body{
+        background-color: #333;
+        color:#fff;
+    }
+}
+@media (prefers-color-scheme: light) {
+    body{
+        background-color: #fbb;
+        color:#333;
+    }
+}

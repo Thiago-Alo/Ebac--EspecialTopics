@@ -33,3 +33,16 @@ const ctx = canvas.getContext('2d');
 
 ctx.fillStyle = 'green';
 ctx.fillRect(10, 10, 150, 100);
+
+//RESIZE
+window.addEventListener('resize', function(){
+    if(this.window.innerWidth < 620){
+        console.log('SMARTPHONE')
+    }else if(this.window.innerWidth < 920){
+        console.log('TABLET')
+    }else{
+        console.log('DESKTOP')
+    }
+
+    // console.log('redimensionou para = ' + this.window.innerWidth);
+})
